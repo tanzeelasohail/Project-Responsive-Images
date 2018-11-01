@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=K2D');
+/* You must use a DIFFERENT FONT THAT THIS ONE as your webfont */
+
+/*************************************************
+            DEFAULTS
+*************************************************/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+html{
+    font-size: 16px;
+    font-family: K2D, "Lucida Sans Unicode", Lucida Grande, sans-serif;
+    /* change this font stack to your own choices */
+    line-height: 1.5;
+    height: 100%;
+    margin: auto;
+    max-width: 1500px;
+    background-color: rgb(255, 255, 230);
+}
+
+.container{
+    
+    border: 1px solid rgb(0,0,0);
+}
+p{
+    
+}
+
+ul{
+    
+}
+ol{
+    
+}
+li{
+    
+}
+
+
+/*************************************************
+            HEADER
+*************************************************/
+header{
+    padding:1rem 2rem;
+    color: rgb(255,255,255);
+    font-size: 250%;
+    text-shadow: 1px 1px #ffffff;
+    min-height: 300px;
+}
+header > h1{
+    
+}
+header > h2{
+    
+}
+/*************************************************
+            NAVMENU
+*************************************************/
+nav{
+    padding:1rem 2rem;
+}
+.mainnav{
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+    background-color: rgb(198,198,198);
+    
+}
+nav > a,
+nav > a:link{
+        color: rgb(139, 1, 6);
+        text-decoration:none;
+}
+        
+
+    
+}
+nav > a:active,
+nav > a:focus,
+nav > a:hover{
+    
+}
+
+/*************************************************
+            MAIN CONTENT
+*************************************************/
+main{
+    padding:1rem 2rem;
+    display: grid;
+    grid-template-areas: "A A"
+                         "B C";
+    grid-column-gap: 2rem;
+   
+}
+
+.first.segment{
+     
+}
+
+
+
+section{
+    
+}
+section p{
+    
+}
+section p img{
+
+    min-height: 125px;
+    min-width: 155px;
+    
+    max-height: 175px;
+    max-width: 300px;
+    
+    float: left;
+    margin: 0.1rem 1rem 0rem 0rem;
+    
+    
+}
+.first.segment{
+    grid-area: A;
+    
+}
+.second.segment.minor-segment{
+    grid-area: B;
+}
+.third.segment.minor-segment{
+    grid-area: C;
+}
+
+/*************************************************
+            FOOTER
+*************************************************/
+footer{
+    padding:1rem 2rem;
+    display: grid;
+    grid-template-areas: "FLA FB FLB";
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(200,200,200);
+    border-top: 1px solid rgb(0,0,0);
+}
+.foot nav{
+    grid-area: FB;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "FLA FLB";
+    padding: 0rem 0rem 0rem 1rem;
+    border-left: 1px rgb(0,0,0);
+    
+}
+.foot section{
+    
+}
+.foot dl{
+    
+}
+.foot dt{
+    color: rgb(44, 0, 63);
+    font-weight: bold;
+    
+}
+.foot dd{
+    
+}
+.foot dd a,
+.foot dd a:visited{
+    color: rgb(44, 0, 63);
+    
+}
+.foot dd a:active,
+.foot dd a:focus,
+.foot dd a:hover{
+    
+}
+/*************************************************
+            MEDIA QUERIES for layout
+*************************************************/
+@media (max-width: 599px){
+    
+      html{
+        min-width: 450px;
+    }
+  header{
+        
+        font-size: 130%;
+        color: rgb(255,250,150);
+        background-size: auto;
+        background-image: url("/responsive-website-project1-kalr0009/img/bg_600.jpg");
+    }
+           main{
+        background-color: rgb(255,255,255);
+    }
+    
+        .mast{
+        background: rgb(192,192,192);
+    }
+    
+    .mainnav{
+        display: flex;
+        flex-direction: column;
+        align-items:stretch;
+        font-size: 1.2rem;
+        
+    }
+    .mainnav a{
+       color: rgb(255,255,255); 
+       text-align: center;
+    }
+        #name{
+        width: 90%  
+    }
+    #email{
+        width: 40%;
+    }
+    #city{
+        width: 50%;
+        margin: 0px 0px 5px 0px;
+    }
+    #comment{
+        width: 90%;
+        height: 100px;
+    }
+}
+@media (min-width: 600px) and (max-width:999px){
+
+ header{
+        min-height: 250px;
+        font-size: 150%;
+        color: rgb(200,255,255);
+        min-height: 250px;
+        background-image: url("/responsive-website-project1-kalr0009/img/bg_1000.jpg");
+        background: rgb(255, 255, 255);
+    }
+    .mast{
+        background: rgb(105,105,105);
+    }
+    
+    main{
+        background-color: rgb(169,169,169);
+    }
+    
+    main h1, main h2{
+    padding: 1rem 0rem ;
+    border-bottom: 1px rgb(0,0,0);
+    }
+ 
+      .mainnav a:hover{
+       color: rgb(255,255,255); 
+    }
+    
+    .first.segment{
+    grid-area: A;
+    
+}
+}
+    
+@media (min-width: 1000px){
+    
+    header{
+        background-image: url(Name-background.jpg);
+       
+    }
+    main{
+        background-color: rgb(119,136,153);
+    }
+
+    .first.segment{
+      color: rgb(249, 243, 169);
+    }
+
+    .second.segment.minor-segment{
+        color: rgb(249, 243, 169);
+    }
+    
+    .third.segment.minor-segment{
+        color: rgb(249, 243, 169);
+    } 
+}
